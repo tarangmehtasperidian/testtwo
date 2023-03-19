@@ -16,7 +16,7 @@ pipeline {
       }
     }
     
-    stage('Build dependencies-1') {
+    stage('Build dependencies-2') {
       steps {
         dir(path: 'serverless') {
           sh 'npm update'

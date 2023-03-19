@@ -23,6 +23,14 @@ pipeline {
 
       }
     }
+    stage('CDK synth') {
+      steps {
+        dir(path: 'serverless') {
+          sh 'cdk synth'
+        }
+
+      }
+    }
     stage('CDK bootstrap') {
       steps {
         dir(path: 'serverless') {

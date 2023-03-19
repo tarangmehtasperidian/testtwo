@@ -6,7 +6,14 @@
 pipeline {
   agent { dockerfile true }
   stages {
+    stage('Build dependencies') {
+      steps {
+        dir(path: 'serverless') {
+          sh 'npm run build'
+        }
 
+      }
+    }
     stage('CDK bootstrap') {
       steps {
         dir(path: 'serverless') {

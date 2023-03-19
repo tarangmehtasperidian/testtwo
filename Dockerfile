@@ -6,4 +6,5 @@ COPY ./serverless .
 RUN npm install -g aws-cdk 
 RUN npm install -g typescript 
 RUN npm install @aws-cdk/aws-s3
-RUn npm update
+RUN npm update
+RUN npm cache clean --force 

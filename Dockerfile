@@ -25,4 +25,5 @@ RUN pip install --upgrade pip && \
     pip install --upgrade awscli
 RUN npm install -g aws-cdk 
 RUN npm install -g typescript 
-RUN npm cache clean --force 
+RUN cdk --version
+#RUN npm cache clean --force 

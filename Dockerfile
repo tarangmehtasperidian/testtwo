@@ -27,3 +27,4 @@ RUN npm install -g aws-cdk
 RUN npm install -g typescript 
 RUN cdk --version
 #RUN npm cache clean --force 
+ENTRYPOINT []
